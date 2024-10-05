@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Juego</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="logo">
+        <img src="img/Steam-Logo.png" alt="Logo de Steam">
+        <h1>STEAM'</h1>
+    </div>
+
+    <section id="gameDetail">
+        <h2>Juego 1</h2>
+        <p>Detalles del Juego 1...</p>
+        <button onclick="startGame()">Jugar</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Juegos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function startGame() {
+            alert("Usa las flechas del teclado para jugar.");
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'ArrowUp') {
+                    console.log("Moviendo hacia arriba");
+                }
+                if (event.key === 'ArrowDown') {
+                    console.log("Moviendo hacia abajo");
+                }
+                if (event.key === 'ArrowLeft') {
+                    console.log("Moviendo hacia la izquierda");
+                }
+                if (event.key === 'ArrowRight') {
+                    console.log("Moviendo hacia la derecha");
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Juegos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <img src="img/Steam-Logo.png" alt="Steam Logo" class="logo">
+                <span class="brand-name">STEAM</span>
+            </div>
+            <ul class="navbar-right">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Lista de Juegos</a></li>
+                <li><a href="registros.html">Registro de Desarrolladores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="filter-navigation">
+        <h3>Navegación de Filtrado</h3>
+        <div class="filter-buttons">
+            <button onclick="filterGames('all')">ALL</button>
+            <button onclick="filterGames('free')">Free to Play</button>
+            <button onclick="filterGames('accion')">Accion</button>
+            <button onclick="filterGames('sport')">Sport</button>
+            <button onclick="filterGames('adventure')">Adventure</button>
+            <button class="filter-btn" data-category="favoritos">Favoritos ⭐</button>
+        </div>
+        <section class="game-list">
+            <section class="game-list">
+                <h2>GAME LIST</h2>
+                <div class="game-grid">
+                    <div id="game-1" class="game big-game">
+                        <img src="img/throne2.jpg" alt="Throne and Liberty">
+                        <div class="game-info">
+                            <p>Free To Play</p>
+                            <button class="favorite-btn" data-game-id="game-1">⭐</button>
+                        </div>
+                    </div>
+            
+                    <!-- Otros juegos pequeños -->
+                    <div id="game-2" class="game small-game">
+                        <img src="img/monster-hunter-stories-okladka-gra-pc-muve.png" alt="Monster Hunter Stories">
+                        <div class="game-info">
+                            <h3>Midweek Deal</h3>
+                            <p>-34% $15.80</p>
+                            <button class="favorite-btn" data-game-id="game-2">⭐</button>
+                        </div>
+                    </div>
+            
+                    <div id="game-3" class="game small-game">
+                        <img src="img/songs.jpg" alt="Songs of Conquest">
+                        <div class="game-info">
+                            <h3>Songs of Conquest</h3>
+                            <p>-50% $34.50</p>
+                            <button class="favorite-btn" data-game-id="game-3">⭐</button>
+                        </div>
+                    </div>
+            
+                    <div id="game-4" class="game small-game">
+                        <img src="img/Left_4_Dead_2.jpg" alt="Left 4 Dead 2">
+                        <div class="game-info">
+                            <h3>Midweek Deal</h3>
+                            <p>-30% $37.10</p>
+                            <button class="favorite-btn" data-game-id="game-4">⭐</button>
+                        </div>
+                    </div>
+            
+                    <div id="game-5" class="game small-game">
+                        <img src="img/GYpWNQQXYAAyGQP.jpg" alt="RPG Fest">
+                        <div class="game-info">
+                            <h3>RPG Fest</h3>
+                            <p>Click for details</p>
+                            <button class="favorite-btn" data-game-id="game-5">⭐</button>
+                        </div>
+                    </div>
+            
+                    <div id="game-6" class="game small-game">
+                        <img src="img/Lightyear-Frontier-Main-Art-900x900.jpg" alt="Lightyear Frontier">
+                        <div class="game-info">
+                            <h3>Halloween Points Shop</h3>
+                            <p>Click for details</p>
+                            <button class="favorite-btn" data-game-id="game-6">⭐</button>
+                        </div>
+                    </div>
+            
+                    <div id="game-7" class="game small-game">
+                        <img src="img/shadows-of-doubt-pack.jpg" alt="Shadows of Doubt">
+                        <div class="game-info">
+                            <h3>Shadows of Doubt</h3>
+                            <p>$13.00</p>
+                            <button class="favorite-btn" data-game-id="game-7">⭐</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        
+
+    <footer>
+        <p>&copy; 2024 Tienda de Juegos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html> 
+
+
+
